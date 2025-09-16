@@ -4,6 +4,10 @@ import { useCallback, useEffect, useState } from "react";
 import imagePaths from "./ImportImages";
 import Fade from "embla-carousel-fade";
 import AutoHeight from "embla-carousel-auto-height";
+import FlyIn from "../Utilities/FlyIn" 
+import ArrowBtn from "../../assets/circle-arrow-right.svg";
+import ShakeButton from "../Utilities/ShakeButton";
+
 
 
 const PhotoCarousel = () => {
@@ -75,9 +79,10 @@ const PhotoCarousel = () => {
 
 
     return (
-        <div ref = {emblaRef} className=" overflow-hidden bg-yellow-200">
+        // <FlyIn direction="left" once = {true}>
+        <div ref = {emblaRef} className=" w-full">
 
-                <div className=" flex items-start">
+                <div className=" flex items-start md:max-h-[85vh] overflow-hidden">
                     {imagePaths.map((source, index) => (
                         <div
                             key= {index}
@@ -85,24 +90,39 @@ const PhotoCarousel = () => {
                         >
                             <img
                                 src = {source}
-                                className="w-full h-auto object-cover"
+                                className=" object-center object-cover md:h-[100vh] md:w-full"
                             />
                         </div>
                     ))}
                 </div>
-        <button onClick = {scrollPrev}>Prev</button>
-        <button onClick = {scrollNext}>Next</button>
-        <div className=" flex justify-center">
+        <div className=" flex md:justify-between justify-center pt-4 md:mb-4">
+            <div className="  hidden md:flex md:w-60 justify-around md:pl-6">
+            <ShakeButton onClick = {scrollPrev}>
+                    <img src={ArrowBtn} className=" rotate-180"/>
+            </ShakeButton>
+            <ShakeButton onClick = {scrollNext}>
+                    <img src={ArrowBtn} className=""/>
+            </ShakeButton>
+    
+        </div>
+        <div className=" md:pr-24 flex justify-between w-80 h-5 md:h-auto">
             {Array.from( { length: slideCount} ).map((_, index) => (
                 <button 
                     key={index} 
                     onClick = {() => emblaApi && emblaApi.scrollTo(index)} 
-                    className={` ${index === selectedIndex ? "bg-blue-500" : "bg-gray-700" } w-12 h-12`}
+                    className={` 
+                        rounded-full w-3 h-3 ring-3 
+                        transition-transform duration-500 ease-out
+                        ${index === selectedIndex ? "ring-forest-green scale-150" : "ring-brown-accent" } 
+                    `}
                 />
             )) }
+            
+
+        </div>
         </div> 
         </div>
-        
+        // </FlyIn>
     )
 };
 

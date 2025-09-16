@@ -1,6 +1,15 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
 
 @theme {
+  --font-anton: 'Anton', sans-serif;
+  --font-title: 'Lovelo', sans-serif;
+  --font-subheader: 'Poppins', san-serif;
+  --font-body: 'Avenir', san-serif;
+  --font-old: 'Chenier', sans-serif;
+  --font-new:'Michroma', sans-serif;
+  --color-text: var(--color-olive)
   /* colors for light theme */
 
   /* colors for dark theme */
@@ -11,9 +20,24 @@
   --color-primary: #e4e4e7;
   --color-secondary: #71717a;
   --color-green-accent: oklch(72.3% 0.219 149.579);
-
-
+  --color-olive: #414A37;
+  --color-forest-green: #1d471d;
+  --color-peach: #DBC2A6;
+  --color-brown-accent: #99744a;
+  
 }
+
+@layer base{
+  body{
+    color: var(--color-olive);
+    font-family:'Avenir' ;
+  }
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

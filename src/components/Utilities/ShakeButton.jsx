@@ -21,7 +21,6 @@ const ShakeButton = ({children, ...props}) =>{
             onMouseEnter={triggerShake}
             onFocus={triggerShake}
             animate={controls}
-
         >
             {children}
         </motion.button>

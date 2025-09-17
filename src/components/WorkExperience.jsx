@@ -61,7 +61,7 @@ const timelineData = {
     time: "Aug 2025 - May 2025",
     company: "Paycom",
     title: "SDET",
-    body: "Automated System, Integration, UI and Regression tests using Selenium, eliminating 39 hours/week (~2,035 hours/year) of manual QA efforts and accelerating CI/CD throughput. \n Scheduled A/B down-server test routines that successfully flagged 4 UI bugs, 3 data discrepancies and 9 inconsistencies within staging environments, enhancing product stability and reducing production defects through continuous testing.\n Partnered with QA and development teams to expand test coverage across edge cases, core functionality, and integration points, improving defect detection and release confidence resulting in the early detection of 3 initially missed test cases.",
+    body: "Automated System, Integration, UI and Regression tests using Selenium, eliminating 39 hours/week (~2,035 hours/year) of manual QA efforts and accelerating CI/CD throughput. \nScheduled A/B down-server test routines that successfully flagged 4 UI bugs, 3 data discrepancies and 9 inconsistencies within staging environments, enhancing product stability and reducing production defects through continuous testing.\nPartnered with QA and development teams to expand test coverage across edge cases, core functionality, and integration points, improving defect detection and release confidence resulting in the early detection of 3 initially missed test cases.",
   },
   "605 Squadron": {
     logo: createIconComp(
@@ -72,28 +72,28 @@ const timelineData = {
     time: "May 2021 - Jun 2020",
     company: "Republic of Singapore Airforce",
     title: "1st Lieutenant",
-    body: "Job Description here",
+    body: "Ensured that operations and procedures were sufficient for Security Audits, collaborating with higher management to improve operations and work policies, resource planning, training & soldier development that improved readiness rating by 127% and overall morale by 85%. \nExecuted quick decision-making during an operational recall instrumental to the prestigious “Air Force High Readiness Standby Force” Award and earning the commendation of Prime Minister Lee in 2020. \nMarshalled over 60 men and exercised decisive decision-making at critical junctures in operations that was instrumental in netting the title “Best FP Squadron” during the Unit Evaluation Exercise in 2020.",
   },
   OCS: {
     logo: createIconComp(saftiIcon, "SAFTI Logo", "h-full w-full"),
     time: "Jun 2020 - Sep 2019",
     company: "SAFTI MI",
     title: "Officer Cadet",
-    body: "Job Description here",
+    body: "Alpha Company Wing 2nd In-Charge. \nTop Graduand of Jungle Confidence Course 117/19. \nInfantry Training Package, Brunei.",
   },
   "Boot Camp": {
     logo: createIconComp(safIcon, "Singapore Armed Forces Logo"),
     time: "Sep 2019 - Jul 2019",
     company: "Singapore Armed Forces",
     title: "Army Recruit",
-    body: "Job Description here",
+    body: "Orion Company, 03/19 Leadership Batch",
   },
   Paralegal: {
     logo: createIconComp(tnIcon, "Timothy Ng LLC Logo"),
     company: "Timothy Ng LLC",
     time: "Nov 2018 - Sep 2018",
     title: "Paralegal",
-    body: "Job Description here",
+    body: "Collaborated with senior counsel in conducting legal research and formulating arguments which led to breakthroughs in legal proceedings. \nDrafted legal instruments including Wills and Trusts which were delivered to clients.",
   },
 };
 

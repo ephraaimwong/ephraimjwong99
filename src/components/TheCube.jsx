@@ -7,7 +7,7 @@ export default function TheCube(){
             <iframe
                 src="https://ephraaimwong.github.io/HoldFast/"
                 className="w-full h-[90vh] border-none"
-                title="R3F Showcase"
+                title="HoldFast Demo Showcase"
             />
         </div>
     );
